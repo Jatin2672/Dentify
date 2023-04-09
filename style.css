@@ -1,0 +1,89 @@
+body{
+    /* width: 90%;
+    max-width: 900px; */
+    background-color: rgba(183, 180, 169, 1);
+}
+.header-upper{
+    padding: 15px 0;
+    display: block;
+    background-color: white;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+    display: flex;
+}
+.container-left{
+
+}
+.contact-info{
+    display: flex;
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+
+
+.home_page{
+    background-image: url(Images/chair_image.jpg);
+    width:100%;
+    height: 620px;
+    
+}
+.home_page1{
+    background-color: black;
+    opacity: 30%;
+    width:100%;
+    height: 620px;
+}
+
+
+.heading-tag{
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    font-weight: lighter;
+    margin-top: 50px;
+    color: white;
+    margin-top: 150px;
+}
+.appointment_button{
+    padding: 5px;
+    margin-left: 40%;
+    width: 250px;
+    height: 60px;
+    justify-content: center;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+}
+.parent-table{
+    background-color: azure;
+    padding: 10%;
+}
+.hospital-features{
+    position: relative;
+    display: flex;
+    background-color:  #036cdb;
+    justify-content: center;
+    padding: 100px;
+    justify-content: space-evenly;
+    outline: 1px solid #036cdb;
+    
+
+    
+}
+.hospital-features img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.list-1{
+    
+    color: white;
+}
