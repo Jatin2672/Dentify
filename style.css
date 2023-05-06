@@ -113,6 +113,30 @@ body{
     text-decoration: none;
     font-weight: bold;
  }
+ .popup{
+  position: absolute;
+  width: max-content;
+  height: auto;
+  background-color: #006494;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 40% ;
+  margin-top:40px;
+  visibility: hidden;
+ }
+ .popup h2{
+  font-family:sans-serif;
+  margin: 0%;
+  width: max-content;
+  height: auto;
+  padding: 5px;
+ }
+ .popup input{
+  margin: 5px;
+  /* padding: 10px; */
+  width: 90%;
+  height:30px ;
+ }
  .section2{
     background-image: url(Images/teeth_muscle.jpg);
     background-size: cover;
