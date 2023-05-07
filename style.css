@@ -112,30 +112,61 @@ body{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    background-color: #0097E8;
  }
  .popup{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: max-content;
   height: auto;
-  background-color: #006494;
+  /* background-color: #006494; */
   padding: 20px;
+  transform: translate(-25%,-60%) scale(0.1);
   border-radius: 10px;
-  margin-left: 40% ;
-  margin-top:40px;
+  left: 50% ;
+  top:25%;
+  backdrop-filter:blur(14px);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   visibility: hidden;
+  transition: transform 0.4s,top 0.4s;
+ }
+ .active-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1)  ;
  }
  .popup h2{
   font-family:sans-serif;
+  font-weight: normal;
+  font-size: 20px;
   margin: 0%;
   width: max-content;
   height: auto;
   padding: 5px;
+  color: #006494;
  }
  .popup input{
   margin: 5px;
   /* padding: 10px; */
   width: 90%;
   height:30px ;
+  border-radius: 10px;
+  
+ }
+ .popup p{
+  margin: 0%;
+  padding: 5px;
+  color: #006494;
+ }
+ .popup button{
+  width: 200px;
+  height: 35px;
+  margin: auto;
+  border-radius: 10px;
+  background-color:#0097E8;
+
  }
  .section2{
     background-image: url(Images/teeth_muscle.jpg);

@@ -33,14 +33,14 @@
           <p>Phone: 123-456-7890</p>
           <p>Email: info@dentalhospital.com</p>
         </div>
-        <div class="book-appointment">
-          <a href="#" class="btn-primary">Book Appointment</a>
+        <div class="book-appointment" id="appontment_btn1">
+          <a href="#" class="btn-primary" onclick="openPopup()" >Book Appointment</a>
         </div>
       </div>
     </nav>
   </header>
   <section>
-    <div class="popup">
+    <div class="popup" id="popup_appointment">
       <h2>Name</h2>
       <input type="text" name="Enter Your Name" id="">
       <h2>Email</h2>
@@ -52,7 +52,7 @@
       <p>We are open 10 am-1 pm and 5pm-7pm</p>
       <h2>Your Dental Condition</h2>
       <input type="text" name="" id="">
-      <button>Request Appointment</button>
+      <button  onclick="closePopup()">Request Appointment</button>
     </div>
     <div class="section1">
       <div class="welcome-text">
@@ -60,8 +60,8 @@
         <h3>Personalized and High-Tech Indian Dentist</h3>
         <h5>Your oral health is our top priority. We are committed to providing a safe and comfortable <br> environment for all our patients, where they can receive the highest quality dental care.</h5>  
       </div>
-      <div class="section1_appointmentbtn">
-        <a href="#">Book Appointment</a>
+      <div class="section1_appointmentbtn" >
+        <a href="#" onclick="openPopup()">Book Appointment</a>
       </div>
     </div>
   </section>
@@ -225,6 +225,8 @@
   let scrollContainer =document.querySelector(".section5_div1");
   let backbtn = document.getElementById("backimagebutton");
   let nextbtn = document.getElementById("nextimagebutton");
+  let popup = document.getElementById("popup_appointment");
+  let appointment_btn1=document.getElementById("appontment_btn1").addEventListener('click',openPopup());
 
   scrollContainer.addEventListener("wheel",(evt) => {
     scrollContainer.style.scrollbehavior = "smooth";
@@ -240,5 +242,12 @@
     scrollContainer.style.scrollbehavior = "smooth";
     scrollContainer.scrollLeft -=300;
   });
+
+  function openPopup(){
+    popup.classList.add("active-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("active-popup");
+  }
 </script>
 </html>
